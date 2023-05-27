@@ -8,7 +8,8 @@ from torch import nn, Tensor
 
 from modules import scripts, shared
 from modules.processing import StableDiffusionProcessing, process_images, state, decode_first_stage
-from modules.sd_samplers import KDiffusionSampler, VanillaStableDiffusionSampler
+from modules.sd_samplers_kdiffusion import KDiffusionSampler
+from modules.sd_samplers_compvis import VanillaStableDiffusionSampler
 from scripts.intmlib import putils
 
 # image_index -> step -> Tensor
